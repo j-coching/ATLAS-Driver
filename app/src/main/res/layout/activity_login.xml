@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/STARPLAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="@string/starplan"
+        android:textColor="#006a4e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/LOGO"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to ATLAS"
+        android:textColor="#006a4e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/STARPLAN"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/LOGO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/starplan_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/user"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Welcome"
+        android:layout_marginTop="100dp"
+        android:hint="Username"
+        app:startIconDrawable="@drawable/username"
+        app:hintTextColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:ems="15"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pswd"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        app:startIconDrawable="@drawable/lock"
+        app:hintTextColor="@color/black"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:ems="15"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pswd"
+        android:layout_marginTop="50dp"
+        android:text="LOG IN"
+        android:backgroundTint="#006a4e"
+        app:cornerRadius="20dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/forget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user"
+        android:layout_marginTop="60dp"
+        android:text="Forget Password?"
+        android:textColor="#006a4e"
+        android:textAlignment="viewStart"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:backgroundTint="#0000ffff"
+        android:outlineProvider="none"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/qr"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#0000ffff"
+        android:outlineProvider="none"
+        android:drawableTop="@drawable/qr2"
+        android:drawableTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/user"
+        app:layout_constraintBottom_toTopOf="@id/user"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "951048574668",
+    "project_id": "atlas-driver",
+    "storage_bucket": "atlas-driver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951048574668:android:af6c66732312ed28755469",
+        "android_client_info": {
+          "package_name": "com.example.atlasdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951048574668-1im05r7h5r206m3qp8a2c2r8he107maq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW6BzmVG9x2vdh2k09Djy1tC73Mi6tUu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951048574668-1im05r7h5r206m3qp8a2c2r8he107maq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

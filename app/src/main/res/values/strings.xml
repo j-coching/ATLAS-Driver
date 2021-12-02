@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ATLAS Driver</string>
+    <string name="starplan_logo">Starplan_logo</string>
+    <string name="starplan">STARPLAN</string>
+    <string name="atlas_driver">ATLAS-DRIVER</string>
+    <string name="all_rights_reserved">ALL RIGHTS RESERVED</string>
+</resources>
