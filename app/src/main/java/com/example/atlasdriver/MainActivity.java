@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
 
+    private FirebaseAuth mAuth;
+
+    private void updateUI(FirebaseUser currentUser) {
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

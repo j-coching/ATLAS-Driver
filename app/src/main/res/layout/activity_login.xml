@@ -55,6 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
@@ -75,6 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_pswd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="textPassword"
