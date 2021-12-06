@@ -13,6 +13,9 @@
             android:name=".HomeScreenActivity"
             android:exported="false" />
         <activity
+            android:name=".cam_qr"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity

@@ -47,19 +47,20 @@
         android:id="@+id/user"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/Welcome"
         android:layout_marginTop="100dp"
         android:hint="Username"
-        app:startIconDrawable="@drawable/username"
         app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/Welcome"
+        app:startIconDrawable="@drawable/username">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="text"
-            android:ems="15"/>
+            android:ems="15"
+            android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,18 +114,15 @@
         android:outlineProvider="none"
         />
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/qr"
-        android:layout_width="50dp"
-        android:layout_height="70dp"
-        android:backgroundTint="#0000ffff"
-        android:outlineProvider="none"
-        android:drawableTop="@drawable/qr2"
-        android:drawableTint="@color/black"
-        app:layout_constraintEnd_toEndOf="@id/user"
-        app:layout_constraintBottom_toTopOf="@id/user"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        />
+    <ImageView
+        android:id="@+id/qr_button"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="to go to qr reader"
+        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintEnd_toEndOf="@+id/user"
+        app:srcCompat="@drawable/qr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

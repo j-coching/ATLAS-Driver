@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -19,12 +21,13 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     private static final String LOG_TAG = LoginActivity.class.getSimpleName();
     EditText tUsername, tPassword;
     Button mSignIn;
     private FirebaseAuth mAuth;
+    private ImageView qr_button;
 
     private void updateUI(FirebaseUser currentUser) {
     }
@@ -34,6 +37,9 @@ public class LoginActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        qr_button = (ImageView) findViewById(R.id.qr_button);
+        qr_button.setOnClickListener(this);
 
         FirebaseApp.initializeApp(this);
 
@@ -76,7 +82,18 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
             }
+
+
         });
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.qr_button:
+                startActivity(new Intent(this, cam_qr.class));
+                break;
+        }
     }
 }
 
