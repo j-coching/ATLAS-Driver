@@ -37,8 +37,8 @@ public class LoginActivity extends AppCompatActivity {
 
         FirebaseApp.initializeApp(this);
 
-        Log.d(LOG_TAG, "-------");
-        Log.d(LOG_TAG, "onCreate");
+        Log.e(LOG_TAG, "-------");
+        Log.e(LOG_TAG, "about to login");
 
         tUsername = (EditText) findViewById(R.id.et_user);
         tPassword = (EditText) findViewById(R.id.et_pswd);

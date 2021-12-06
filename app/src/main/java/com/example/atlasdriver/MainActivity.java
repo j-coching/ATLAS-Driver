@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        Log.d(LOG_TAG, "-------");
-        Log.d(LOG_TAG, "XXXXXX");
+        Log.e(LOG_TAG, "-------");
+        Log.e(LOG_TAG, "initializing splash screen");
 
         new Handler().postDelayed(new Runnable(){
             @Override
