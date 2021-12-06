@@ -25,7 +25,7 @@ import com.google.common.util.concurrent.ListenableFuture;
 
 import java.util.concurrent.ExecutionException;
 
-public class cam_qr extends AppCompatActivity {
+public class cam_qrActivity extends AppCompatActivity {
     private static final int PERMISSION_REQUEST_CAMERA = 0;
 
     private PreviewView previewView;
@@ -37,7 +37,7 @@ public class cam_qr extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cam_qr);
+        setContentView(R.layout.activity_cam_qr);
 
         previewView = findViewById(R.id.activity_main_previewView);
 
@@ -47,7 +47,7 @@ public class cam_qr extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), qrCode, Toast.LENGTH_SHORT).show();
-                Log.i(cam_qr.class.getSimpleName(), "QR Code Found: " + qrCode);
+                Log.i(cam_qrActivity.class.getSimpleName(), "QR Code Found: " + qrCode);
             }
         });
 
@@ -60,7 +60,7 @@ public class cam_qr extends AppCompatActivity {
             startCamera();
         } else {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)) {
-                ActivityCompat.requestPermissions(cam_qr.this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST_CAMERA);
+                ActivityCompat.requestPermissions(cam_qrActivity.this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST_CAMERA);
             } else {
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST_CAMERA);
             }
