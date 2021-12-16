@@ -7,6 +7,18 @@
     android:orientation="horizontal"
     tools:context=".HomeScreenActivity">
 
+    <fragment
+        android:name="com.example.atlasdriver.MapFragment"
+        android:id="@+id/frameLayout"
+        android:layout_width="950dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/switch_cctv_map_view_button"
         android:layout_width="110dp"
@@ -20,17 +32,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.967" />
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="670dp"
-        android:layout_height="600dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

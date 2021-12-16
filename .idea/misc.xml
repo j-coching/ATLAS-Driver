@@ -13,14 +13,14 @@
         <entry key="app/src/main/res/drawable/lock.xml" value="0.2625" />
         <entry key="app/src/main/res/layout-v26/activity_splash_screen.xml" value="0.18055513907638343" />
         <entry key="app/src/main/res/layout/activity_cam_qr.xml" value="0.24635416666666668" />
-        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.19284603421461896" />
+        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21323529411764705" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27634660421545665" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19281045751633988" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.14133414530998206" />
         <entry key="app/src/main/res/layout/activity_splash_screen_1.xml" value="0.12447916666666667" />
-        <entry key="app/src/main/res/layout/fragment_cctv.xml" value="0.24635416666666668" />
-        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_cctv.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_map.xml" value="0.165" />
         <entry key="app/src/main/res/layout/trial.xml" value="0.3300970873786408" />
         <entry key="app/src/main/res/layout/tryial.xml" value="0.23505434782608695" />
       </map>
@@ -31,5 +31,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.335" />
+      </ProjectState>
+    </option>
   </component>
 </project>

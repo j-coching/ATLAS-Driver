@@ -1,6 +1,9 @@
 package com.example.atlasdriver;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,14 +23,18 @@ public class HomeScreenActivity extends AppCompatActivity {
 
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                //Placeholder Activity: once clicked, will go to splash screen.
-                //edit this activity so that it will go from map fragment to cctv fragment
-                Intent intent = new Intent(HomeScreenActivity.this,MainActivity.class);
-                startActivity(intent);
-            }
+           public void onClick(View v) {
+
+                //replaceFragment(new MapFragment());
+                replaceFragment(new CCTVFragment());
+           }
         });
+    }
 
-
+    private void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frameLayout, fragment);
+        fragmentTransaction.commit();
     }
 }
