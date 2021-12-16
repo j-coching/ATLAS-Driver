@@ -12,6 +12,8 @@ import android.widget.ImageView;
 
 public class HomeScreenActivity extends AppCompatActivity {
 
+    private boolean interface_counter = false;
+
     private ImageView cctv_map_switch;
 
     @Override
@@ -25,8 +27,14 @@ public class HomeScreenActivity extends AppCompatActivity {
             @Override
            public void onClick(View v) {
 
-                //replaceFragment(new MapFragment());
-                replaceFragment(new CCTVFragment());
+                if(interface_counter == false){
+                    replaceFragment(new MapFragment());
+                    interface_counter = true;
+                }
+                else{
+                    replaceFragment(new CCTVFragment());
+                    interface_counter = false;
+                }
            }
         });
     }
