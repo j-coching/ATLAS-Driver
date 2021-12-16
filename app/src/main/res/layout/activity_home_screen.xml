@@ -4,6 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".HomeScreenActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/switch_cctv_map_view_button"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/cctv_maps"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

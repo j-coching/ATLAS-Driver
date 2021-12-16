@@ -9,8 +9,10 @@
         <entry key="..\:/Git/ATLAS-Driver/app/src/main/res/drawable/username.xml" value="0.23333333333333334" />
         <entry key="..\:/Git/ATLAS-Driver/app/src/main/res/layout/activity_login.xml" value="0.4" />
         <entry key="..\:/Git/ATLAS-Driver/app/src/main/res/layout/cam_qr.xml" value="0.13269927536231885" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2625" />
         <entry key="app/src/main/res/layout-v26/activity_splash_screen.xml" value="0.18055513907638343" />
-        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_cam_qr.xml" value="0.24635416666666668" />
+        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21323529411764705" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27634660421545665" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19281045751633988" />
