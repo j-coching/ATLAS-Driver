@@ -28,4 +28,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="511dp"
+        android:layout_height="230dp"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="40dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
