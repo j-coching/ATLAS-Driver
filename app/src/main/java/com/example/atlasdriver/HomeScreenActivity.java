@@ -29,7 +29,7 @@ public class HomeScreenActivity extends AppCompatActivity {
                 if(interface_counter == false){
                     replaceFragment(new MapFragment());
                     interface_counter = true;
-                    
+
                 }
                 else{
                     replaceFragment(new CCTVFragment());
