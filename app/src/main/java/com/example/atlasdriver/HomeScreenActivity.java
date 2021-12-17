@@ -9,11 +9,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Switch;
 
 public class HomeScreenActivity extends AppCompatActivity {
 
-    private boolean interface_counter = false;
-
+    public boolean interface_counter = false;
     private ImageView cctv_map_switch;
 
     @Override
@@ -21,12 +21,11 @@ public class HomeScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
-        cctv_map_switch = (ImageView) findViewById(R.id.switch_cctv_map_view_button);
+        cctv_map_switch = (ImageView) findViewById(R.id.cctv_map_switch);
 
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
-           public void onClick(View v) {
-
+            public void onClick(View v) {
                 if(interface_counter == false){
                     replaceFragment(new MapFragment());
                     interface_counter = true;
@@ -35,7 +34,7 @@ public class HomeScreenActivity extends AppCompatActivity {
                     replaceFragment(new CCTVFragment());
                     interface_counter = false;
                 }
-           }
+            }
         });
     }
 

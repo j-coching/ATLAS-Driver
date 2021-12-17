@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,29 +9,27 @@
     tools:context=".HomeScreenActivity">
 
     <fragment
-        android:name="com.example.atlasdriver.MapFragment"
         android:id="@+id/frameLayout"
-        android:layout_width="950dp"
+        android:name="com.example.atlasdriver.MapFragment"
+        android:layout_width="1000dp"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.398" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/switch_cctv_map_view_button"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:src="@drawable/cctv_maps"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="2.5dp"
+    <ImageView
+        android:id="@+id/cctv_map_switch"
+        android:layout_width="153dp"
+        android:layout_height="138dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.981"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.967" />
+        app:layout_constraintVertical_bias="0.965"
+        app:srcCompat="@drawable/custom_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
