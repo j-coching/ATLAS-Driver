@@ -8,20 +8,23 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Switch;
 
 public class HomeScreenActivity extends AppCompatActivity {
 
     public boolean interface_counter = false;
-    private ImageView cctv_map_switch;
+    //private Button cctv_map_switch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
-        cctv_map_switch = (ImageView) findViewById(R.id.cctv_map_switch);
+        //cctv_map_switch = (Button) findViewById(R.id.cctv_map_switch);
+
+        final Button cctv_map_switch = findViewById(R.id.cctv_map_switch);
 
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
