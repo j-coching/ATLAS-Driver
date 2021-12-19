@@ -15,27 +15,26 @@ import android.widget.Switch;
 public class HomeScreenActivity extends AppCompatActivity {
 
     public boolean interface_counter = false;
-    //private Button cctv_map_switch;
+    private Button cctv_map_switch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
-        //cctv_map_switch = (Button) findViewById(R.id.cctv_map_switch);
-
-        final Button cctv_map_switch = findViewById(R.id.cctv_map_switch);
+        cctv_map_switch = (Button) findViewById(R.id.cctv_map_switch);
 
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(interface_counter == false){
                     replaceFragment(new MapFragment());
+                    cctv_map_switch.setBackgroundResource(R.drawable.cctv_switch);
                     interface_counter = true;
-
                 }
                 else{
                     replaceFragment(new CCTVFragment());
+                    cctv_map_switch.setBackgroundResource(R.drawable.map_switch);
                     interface_counter = false;
                 }
             }
