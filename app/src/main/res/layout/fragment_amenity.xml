@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     android:background="#006A4E"
     tools:context=".AmenityFragment" >
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/aButton1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_centerInParent="true"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:background="@drawable/amenity_button_1" />
 
-</RelativeLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aButton2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/amenity_button_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aButton3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/amenity_button_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aButton4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/amenity_button_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aButton5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/amenity_button_1" />
+</LinearLayout>
