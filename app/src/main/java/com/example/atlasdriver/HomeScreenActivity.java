@@ -14,7 +14,7 @@ import android.widget.Switch;
 
 public class HomeScreenActivity extends AppCompatActivity {
 
-    public boolean interface_counter = false;
+    public boolean interface_counter = true;
     private Button cctv_map_switch;
 
     @Override
@@ -23,6 +23,9 @@ public class HomeScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
 
         cctv_map_switch = (Button) findViewById(R.id.cctv_map_switch);
+        replaceFragment(new MapFragment());
+        replaceFragment2(new AmenityFragment());
+
 
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +48,13 @@ public class HomeScreenActivity extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frameLayout, fragment);
+        fragmentTransaction.commit();
+    }
+
+    private void replaceFragment2(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frameLayout2, fragment);
         fragmentTransaction.commit();
     }
 }

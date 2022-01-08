@@ -8,17 +8,23 @@
     android:orientation="horizontal"
     tools:context=".HomeScreenActivity">
 
-    <fragment
+    <FrameLayout
         android:id="@+id/frameLayout"
         android:name="com.example.atlasdriver.MapFragment"
-        android:layout_width="1000dp"
+        android:layout_width="950dp"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:name="com.example.atlasdriver.AmenityFragment"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/cctv_map_switch"

@@ -14,15 +14,19 @@
         android:theme="@style/Theme.ATLASDriver">
         <activity
             android:name=".HomeScreenActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".cam_qrActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
