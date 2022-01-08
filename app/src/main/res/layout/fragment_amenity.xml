@@ -4,17 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#006A4E"
-    tools:context=".AmenityFragment">
+    tools:context=".AmenityFragment" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="AMENITIES ARE HERE"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aButton1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_centerInParent="true"
-        android:textSize="30sp"
-        android:textColor="@color/black"
-
-
-        />
+        android:background="@drawable/amenity_button_1" />
 
 </RelativeLayout>

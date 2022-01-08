@@ -26,7 +26,6 @@ public class HomeScreenActivity extends AppCompatActivity {
         replaceFragment(new MapFragment());
         replaceFragment2(new AmenityFragment());
 
-
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
