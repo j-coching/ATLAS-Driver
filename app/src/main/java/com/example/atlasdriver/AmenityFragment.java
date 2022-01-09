@@ -85,11 +85,11 @@ public class AmenityFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(aButton5_interface_counter == false){
-                    amenity_button_5.setBackgroundResource(R.drawable.lights_on);
+                    amenity_button_5.setBackgroundResource(R.drawable.lights_off);
                     aButton5_interface_counter = true;
                 }
                 else{
-                    amenity_button_5.setBackgroundResource(R.drawable.lights_off);
+                    amenity_button_5.setBackgroundResource(R.drawable.lights_on);
                     aButton5_interface_counter = false;
                 }
             }
