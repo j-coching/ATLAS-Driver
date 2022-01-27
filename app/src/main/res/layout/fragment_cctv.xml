@@ -8,15 +8,19 @@
     android:orientation="horizontal"
     tools:context=".CCTVFragment">
 
-    <VideoView
-        android:id="@+id/cctv_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <androidx.camera.view.CameraView
+        android:id="@+id/camera"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="42dp"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:lensFacing="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,14 @@
 package com.example.atlasdriver;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +19,7 @@ public class HomeScreenActivity extends AppCompatActivity {
 
     public boolean interface_counter = true;
     private Button cctv_map_switch;
+    private static final int REQUEST_CAMERA_PERMISSION = 200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,15 @@ public class HomeScreenActivity extends AppCompatActivity {
         cctv_map_switch = (Button) findViewById(R.id.cctv_map_switch);
         replaceFragment(new MapFragment());
         replaceFragment2(new AmenityFragment());
+
+        if(ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(this,new String[] {
+                    Manifest.permission.CAMERA
+            },REQUEST_CAMERA_PERMISSION);
+            return;
+        }
 
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
