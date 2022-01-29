@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,19 +9,34 @@
     android:orientation="horizontal"
     tools:context=".CCTVFragment">
 
-    <androidx.camera.view.CameraView
-        android:id="@+id/camera"
-        android:layout_width="400dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginBottom="42dp"
+    <com.google.android.cameraview.CameraView
+        android:id="@+id/camera1"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="40sp"
+        android:layout_marginEnd="70sp"
+        android:layout_marginBottom="40sp"
         android:adjustViewBounds="true"
         android:keepScreenOn="true"
-        app:lensFacing="back"
+        app:lensFacing="front"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        tools:ignore="MissingClass" />
+
+    <com.google.android.cameraview.CameraView
+        android:id="@+id/camera2"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="40sp"
+        android:layout_marginEnd="70sp"
+        android:layout_marginBottom="40sp"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:lensFacing="front"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
