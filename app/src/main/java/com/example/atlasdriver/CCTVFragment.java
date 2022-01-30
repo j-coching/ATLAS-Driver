@@ -1,71 +1,61 @@
 package com.example.atlasdriver;
 
-import android.graphics.Camera;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.app.Activity;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
+import androidx.fragment.app.Fragment;
+
+import android.content.pm.ActivityInfo;
+import android.hardware.Camera;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.MediaStore;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
-import androidx.core.content.FileProvider;
-import androidx.fragment.app.Fragment;
-
-
-import static android.Manifest.permission.CAMERA;
-import static android.app.Activity.RESULT_CANCELED;
-import static android.app.Activity.RESULT_OK;
-
+import android.widget.VideoView;
+import java.util.Objects;
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.widget.Toolbar;
-import androidx.camera.view.CameraView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Objects;
+import android.widget.ImageView;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 public class CCTVFragment extends Fragment {
-    private Camera camera;
-    FrameLayout frameLayout;
 
+    //Camera camera;
+    //FrameLayout frameLayout;
+    //ShowCamera showCamera;
+    VideoView vv;
     View view;
-    private CameraView mCameraView;
-    private Activity activity;
+    VideoView videoView;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View rootView = inflater.inflate(R.layout.fragment_cctv, container, false);
-        mCameraView = (CameraView) rootView.findViewById(R.id.camera1);
 
-        return rootView;
+        View view = inflater.inflate(R.layout.fragment_cctv, container, false);
+        VideoView vv = (VideoView)view.findViewById(R.id.cctv_view);
+        //String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.vfeed;
+        //String rtspURL = "rtsp://192.168.100.4:5540/ch0";
+
+        //"http://192.168.100.4:8080/playlist.m3u"
+        //"rtsp://192.168.100.4:5540/ch0"
+
+        //vv.setVideoURI(Uri.parse(path));
+        vv.setVideoURI(Uri.parse("rtsp://192.168.100.4:5540/ch0"));
+
+        //vv.setMediaController(new MediaController(getActivity()));
+        vv.requestFocus();
+        vv.start();
+
+        return view;
     }
-
-
 }
-

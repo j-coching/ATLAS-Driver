@@ -7,36 +7,18 @@
     android:layout_height="match_parent"
     android:background="#F5F5DC"
     android:orientation="horizontal"
-    tools:context=".CCTVFragment">
+    tools:context="CCTVFragment">
 
-    <com.google.android.cameraview.CameraView
-        android:id="@+id/camera1"
-        android:layout_width="300sp"
+    <VideoView
+        android:id="@+id/cctv_view"
+        android:layout_width="400sp"
         android:layout_height="300sp"
-        android:layout_marginTop="40sp"
-        android:layout_marginEnd="70sp"
-        android:layout_marginBottom="40sp"
-        android:adjustViewBounds="true"
-        android:keepScreenOn="true"
-        app:lensFacing="front"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingClass" />
+        app:layout_constraintVertical_bias="0.494" />
 
-    <com.google.android.cameraview.CameraView
-        android:id="@+id/camera2"
-        android:layout_width="300sp"
-        android:layout_height="300sp"
-        android:layout_marginTop="40sp"
-        android:layout_marginEnd="70sp"
-        android:layout_marginBottom="40sp"
-        android:adjustViewBounds="true"
-        android:keepScreenOn="true"
-        app:lensFacing="front"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingClass" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
