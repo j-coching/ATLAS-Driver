@@ -33,17 +33,20 @@ public class HomeScreenActivity extends AppCompatActivity {
         replaceFragment(new MapFragment());
         replaceFragment2(new AmenityFragment());
 
+        MapFragment mFragment = new MapFragment();
+        CCTVFragment cFragment = new CCTVFragment();
 
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(interface_counter == false){
-                    replaceFragment(new MapFragment());
+                    replaceFragment(mFragment);
                     cctv_map_switch.setBackgroundResource(R.drawable.cctv_switch);
                     interface_counter = true;
                 }
+                
                 else{
-                    replaceFragment(new CCTVFragment());
+                    replaceFragment(cFragment);
                     cctv_map_switch.setBackgroundResource(R.drawable.map_switch);
                     interface_counter = false;
                 }

@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.VideoView;
 import java.util.Objects;
@@ -43,6 +44,7 @@ public class CCTVFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_cctv, container, false);
         VideoView vv = (VideoView)view.findViewById(R.id.cctv_view);
+        Button button = (Button)view.findViewById(R.id.buttonsample);
         //String path = "android.resource://" + getActivity().getPackageName() + "/" + R.raw.vfeed;
         //String rtspURL = "rtsp://192.168.100.4:5540/ch0";
 
@@ -51,6 +53,7 @@ public class CCTVFragment extends Fragment {
 
         //vv.setVideoURI(Uri.parse(path));
         vv.setVideoURI(Uri.parse("rtsp://192.168.100.4:5540/ch0"));
+        //button.setVisibility(View.GONE);
 
         //vv.setMediaController(new MediaController(getActivity()));
         vv.requestFocus();
