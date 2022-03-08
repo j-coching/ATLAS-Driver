@@ -24,7 +24,7 @@ public class CCTVFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         View view = inflater.inflate(R.layout.fragment_cctv, container, false);
@@ -38,3 +38,4 @@ public class CCTVFragment extends Fragment {
 
 
 }
+
