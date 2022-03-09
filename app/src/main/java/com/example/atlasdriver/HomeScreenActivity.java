@@ -2,21 +2,13 @@ package com.example.atlasdriver;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.camera.view.CameraView;
-import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.Manifest;
-import android.hardware.Camera;
-import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Switch;
-import android.hardware.Camera;
 
 public class HomeScreenActivity extends AppCompatActivity {
 
@@ -31,7 +23,7 @@ public class HomeScreenActivity extends AppCompatActivity {
 
         cctv_map_switch = (Button) findViewById(R.id.cctv_map_switch);
         replaceFragment(new MapFragment());
-        replaceFragment2(new AmenityFragment());
+        replaceFragment2(new DashboardSpace());
 
         MapFragment mFragment = new MapFragment();
         CCTVFragment cFragment = new CCTVFragment();
