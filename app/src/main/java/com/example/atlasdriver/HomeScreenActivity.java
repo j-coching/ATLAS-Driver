@@ -9,6 +9,13 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 public class HomeScreenActivity extends AppCompatActivity {
 
@@ -20,6 +27,11 @@ public class HomeScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
+
+        String date = new SimpleDateFormat("MM.dd.yy | EEE", Locale.getDefault()).format(new Date());
+        TextView dateToday = findViewById(R.id.date_today);
+        dateToday.setText(date);
+
 
         cctv_map_switch = (Button) findViewById(R.id.cctv_map_switch);
         replaceFragment(new MapFragment());

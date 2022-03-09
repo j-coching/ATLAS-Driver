@@ -7,17 +7,21 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+
 public class DashboardSpace extends Fragment {
 
     View view;
+
     public boolean aButton1_interface_counter, aButton2_interface_counter, aButton3_interface_counter, aButton4_interface_counter, aButton5_interface_counter = true;
     private Button amenity_button_1, amenity_button_2, amenity_button_3, amenity_button_4, amenity_button_5;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.home_dashboard, container, false);
+
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.home_dashboard, container, false);
 
 //        amenity_button_1 = (Button) view.findViewById(R.id.aButton1);
 //        amenity_button_2 = (Button) view.findViewById(R.id.aButton2);

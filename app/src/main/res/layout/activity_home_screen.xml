@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,52 +7,117 @@
     android:orientation="horizontal"
     tools:context=".HomeScreenActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="740dp"
-            android:layout_height="415dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#006A4E"
+                android:orientation="horizontal"
+                android:layout_weight="10">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8">
+                </Space>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/menu_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/menu"
+                    android:layout_gravity="center"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10">
+                </Space>
+
+                <TextView
+                    android:id="@+id/date_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Date Today" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10">
+                </Space>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/logo_at_dashboard_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/starplan_logo_white"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                </Space>
+
+            </LinearLayout>
 
             <FrameLayout
                 android:id="@+id/frameLayout2"
                 android:name="com.example.atlasdriver.DashboardSpace"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="bottom"
                 android:layout_weight="1" />
 
-            <FrameLayout
-                android:id="@+id/frameLayout"
-                android:name="com.example.atlasdriver.MapFragment"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:layout_weight="3.25" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="142dp"
-            android:layout_height="142dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="3.25">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/cctv_map_switch"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="142dp"
+                android:layout_height="142dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:background="@drawable/custom_button" />
 
-        </LinearLayout>
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:name="com.example.atlasdriver.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end" />
 
+        </RelativeLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </LinearLayout>
+
+
