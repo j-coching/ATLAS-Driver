@@ -117,19 +117,49 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1.3">
 
-            <TextView
-                android:id="@+id/distanceSelection"
-                android:textSize="20sp"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Distance Unit"
-                android:textStyle="bold"
-                android:textColor="@color/white"
-                android:gravity="center_vertical"
-                android:layout_gravity="center"/>
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/distanceSelection"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:text="Distance Unit"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/miles_select"
+                    android:layout_width="50sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/unselected_miles" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2">
+                </Space>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/kilometers_select"
+                    android:layout_width="50sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/selected_km" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/Amenities"
@@ -153,7 +183,7 @@
                 <Space
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5">
+                    android:layout_weight="0.8">
                 </Space>
 
                 <LinearLayout
@@ -215,11 +245,60 @@
 
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="0dp"
+<!--                <Space-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1.4">-->
+<!--                </Space>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1.2">
-                </Space>
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/amenity_switch_1"
+                        android:layout_width="60sp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:background="@drawable/amenity_switch_off" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/amenity_switch_2"
+                        android:layout_width="60sp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:background="@drawable/amenity_switch_off" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/amenity_switch_3"
+                        android:layout_width="60sp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:background="@drawable/amenity_switch_off" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/amenity_switch_4"
+                        android:layout_width="60sp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:background="@drawable/amenity_switch_off" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/amenity_switch_5"
+                        android:layout_width="60sp"
+                        android:layout_height="30sp"
+                        android:layout_gravity="center|right"
+                        android:layout_weight="1"
+                        android:background="@drawable/amenity_switch_off" />
+
+                </LinearLayout>
+
 
             </LinearLayout>
 
@@ -252,7 +331,7 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.7">
+            android:layout_weight="1.3">
         </Space>
 
     </LinearLayout>
