@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006A4E"
+    android:orientation="vertical"
+    tools:context=".Menu1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.15"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/menu_profile_pic"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_gravity="center"
+            android:background="@drawable/profile_picture" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.25"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"></Space>
+
+        <TextView
+            android:id="@+id/driver_name_at_menu"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/driver_name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.07"></Space>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profile_option"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:background="@drawable/go_to_profile" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"></Space>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.28"
+        android:orientation="horizontal">//1
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dividing_line"
+            android:layout_width="100sp"
+            android:layout_height="2sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/dividing_line" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.6">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </Space>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/distanceSelection"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Distance Unit"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/Amenities"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amenities"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3">
+
+                    <TextView
+                        android:id="@+id/WiFi"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="WiFi"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/Aircon"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Aircon"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/Comfort_Room"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Comfort Room"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/Reading_Lights"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Reading Lights"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/Television"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Television"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2">
+                </Space>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Emergency"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Emergency"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/Report_an_Issue"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Report an Issue"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+        </Space>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </Space>
+
+
+
+</LinearLayout>

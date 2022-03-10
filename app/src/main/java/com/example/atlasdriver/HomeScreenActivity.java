@@ -21,6 +21,7 @@ public class HomeScreenActivity extends AppCompatActivity {
 
     public boolean interface_counter = true;
     private Button cctv_map_switch;
+    private Button menu_switch;
     CameraView mCameraView;
 
     @Override
@@ -28,17 +29,21 @@ public class HomeScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
 
-        String date = new SimpleDateFormat("MM.dd.yy | EEE", Locale.getDefault()).format(new Date());
+        String date = new SimpleDateFormat("MM.dd.yy | EEE.", Locale.getDefault()).format(new Date());
         TextView dateToday = findViewById(R.id.date_today);
         dateToday.setText(date);
 
-
         cctv_map_switch = (Button) findViewById(R.id.cctv_map_switch);
+        menu_switch = (Button) findViewById(R.id.menu_button);
+
         replaceFragment(new MapFragment());
         replaceFragment2(new DashboardSpace());
 
         MapFragment mFragment = new MapFragment();
         CCTVFragment cFragment = new CCTVFragment();
+
+        DashboardSpace dFragment = new DashboardSpace();
+        Menu1Fragment m1Fragment = new Menu1Fragment();
 
         cctv_map_switch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +57,25 @@ public class HomeScreenActivity extends AppCompatActivity {
                 else{
                     replaceFragment(cFragment);
                     cctv_map_switch.setBackgroundResource(R.drawable.map_switch);
+                    interface_counter = false;
+                }
+            }
+        });
+
+        menu_switch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(interface_counter == false){
+                    replaceFragment2(dFragment);
+                    menu_switch.setBackgroundResource(R.drawable.menu);
+                    dateToday.setText(date);
+                    interface_counter = true;
+                }
+
+                else{
+                    replaceFragment2(m1Fragment);
+                    menu_switch.setBackgroundResource(R.drawable.back_to_home_dashboard);
+                    dateToday.setText("MENU");
                     interface_counter = false;
                 }
             }
