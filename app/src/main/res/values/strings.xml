@@ -8,4 +8,13 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="cctv_fragment">CCTV Fragment</string>
     <string name="driver_name">Driver Name</string>
+    <string name="emergency">Emergency</string>
+    <string name="television">Television</string>
+    <string name="wifi">WiFi</string>
+    <string name="distance_unit">Distance Unit</string>
+    <string name="reading_lights">Reading Lights</string>
+    <string name="comfort_room">Comfort Room</string>
+    <string name="aircon">Aircon</string>
+    <string name="report_an_issue">Report an Issue</string>
+    <string name="amenities">Amenities</string>
 </resources>

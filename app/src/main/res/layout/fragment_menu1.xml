@@ -23,7 +23,8 @@
             android:layout_width="70sp"
             android:layout_height="70sp"
             android:layout_gravity="center"
-            android:background="@drawable/profile_picture" />
+            android:background="@drawable/profile_picture"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Space
             android:layout_width="0dp"
@@ -65,7 +66,8 @@
             android:layout_width="20sp"
             android:layout_height="20sp"
             android:layout_gravity="center"
-            android:background="@drawable/go_to_profile" />
+            android:background="@drawable/go_to_profile"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Space
             android:layout_width="0dp"
@@ -78,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.28"
-        android:orientation="horizontal">//1
+        android:orientation="horizontal">
 
         <Space
             android:layout_width="0dp"
@@ -91,7 +93,8 @@
             android:layout_height="2sp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/dividing_line" />
+            android:background="@drawable/dividing_line"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <Space
             android:layout_width="0dp"
@@ -131,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:text="Distance Unit"
+                    android:text="@string/distance_unit"
                     android:textStyle="bold"
                     android:textColor="@color/white"
                     android:gravity="center_vertical"
@@ -143,7 +146,8 @@
                     android:layout_height="30sp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/unselected_miles" />
+                    android:background="@drawable/unselected_miles"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                 <Space
                     android:layout_width="0dp"
@@ -157,7 +161,8 @@
                     android:layout_height="30sp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/selected_km" />
+                    android:background="@drawable/selected_km"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
@@ -167,7 +172,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Amenities"
+                android:text="@string/amenities"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:gravity="center_vertical"
@@ -198,7 +203,7 @@
                         android:textSize="20sp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="WiFi"
+                        android:text="@string/wifi"
                         android:textStyle="bold"
                         android:textColor="@color/white"
                         android:layout_weight="1" />
@@ -208,7 +213,7 @@
                         android:textSize="20sp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Aircon"
+                        android:text="@string/aircon"
                         android:textStyle="bold"
                         android:textColor="@color/white"
                         android:layout_weight="1" />
@@ -218,7 +223,7 @@
                         android:textSize="20sp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Comfort Room"
+                        android:text="@string/comfort_room"
                         android:textStyle="bold"
                         android:textColor="@color/white"
                         android:layout_weight="1" />
@@ -228,7 +233,7 @@
                         android:textSize="20sp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Reading Lights"
+                        android:text="@string/reading_lights"
                         android:textStyle="bold"
                         android:textColor="@color/white"
                         android:layout_weight="1" />
@@ -238,7 +243,7 @@
                         android:textSize="20sp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Television"
+                        android:text="@string/television"
                         android:textStyle="bold"
                         android:textColor="@color/white"
                         android:layout_weight="1" />
@@ -263,7 +268,8 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off" />
+                        android:background="@drawable/amenity_switch_off"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/amenity_switch_2"
@@ -271,7 +277,8 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off" />
+                        android:background="@drawable/amenity_switch_off"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/amenity_switch_3"
@@ -279,7 +286,8 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off" />
+                        android:background="@drawable/amenity_switch_off"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/amenity_switch_4"
@@ -287,7 +295,8 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off" />
+                        android:background="@drawable/amenity_switch_off"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/amenity_switch_5"
@@ -295,7 +304,8 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off" />
+                        android:background="@drawable/amenity_switch_off"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 </LinearLayout>
 
@@ -308,7 +318,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Emergency"
+                android:text="@string/emergency"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:gravity="center_vertical"
@@ -320,7 +330,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Report an Issue"
+                android:text="@string/report_an_issue"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:gravity="center_vertical"
