@@ -25,14 +25,16 @@
         <entry key="app/src/main/res/drawable/amenity_button_5.xml" value="0.2625" />
         <entry key="app/src/main/res/drawable/custom_button.xml" value="0.2625" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2625" />
+        <entry key="app/src/main/res/drawable/km_button.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/drawable/lock.xml" value="0.2625" />
         <entry key="app/src/main/res/drawable/menu_button.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/drawable/mi_button.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/drawable/qr.xml" value="0.2625" />
         <entry key="app/src/main/res/drawable/qr2.xml" value="0.2625" />
         <entry key="app/src/main/res/drawable/username.xml" value="0.1421875" />
         <entry key="app/src/main/res/layout-v26/activity_splash_screen.xml" value="0.18055513907638343" />
         <entry key="app/src/main/res/layout/activity_cam_qr.xml" value="0.24635416666666668" />
-        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.75" />
+        <entry key="app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.21323529411764705" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27634660421545665" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19281045751633988" />

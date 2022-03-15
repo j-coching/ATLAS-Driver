@@ -21,7 +21,8 @@ public class HomeScreenActivity extends AppCompatActivity {
 
     public boolean interface_counter = true;
     private Button cctv_map_switch;
-    private Button menu_switch;
+    private Button menu_switch, kilometers_switch, miles_switch;
+    private Button amenity_button_1, amenity_button_2, amenity_button_3, amenity_button_4, amenity_button_5;
     CameraView mCameraView;
 
     @Override
