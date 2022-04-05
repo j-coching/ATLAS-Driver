@@ -9,57 +9,45 @@
     android:orientation="horizontal"
     tools:context="CCTVFragment">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="93dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/cctv_view"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World"
-            android:layout_marginRight="10sp"
-            />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hi World" />
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/cctv_btn1"
+        android:layout_width="400sp"
+        android:layout_height="300sp"
+        android:text="Cam 1"
+        android:textColor="#50000000"
+        app:layout_constraintBottom_toBottomOf="@id/cctv_view1"
+        app:layout_constraintStart_toStartOf="@id/cctv_view1"
+        android:background="#00000000" />
+    <Button
+        android:id="@+id/cctv_btn2"
+        android:layout_width="400dp"
+        android:layout_height="300sp"
+        android:text="Cam 2"
+        android:textColor="#50000000"
+        app:layout_constraintBottom_toBottomOf="@id/cctv_view2"
+        app:layout_constraintStart_toStartOf="@id/cctv_view2"
+        android:background="#00000000"/>
 
     <VideoView
-        android:id="@+id/cctv_view"
+        android:id="@+id/cctv_view1"
         android:layout_width="400sp"
-        android:layout_height="0dp"
-        android:layout_marginTop="177dp"
-        android:layout_marginBottom="182dp"
+        android:layout_height="300sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.494" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
-    <Button
-        android:id="@+id/buttonsample"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="111dp"
-        android:text="Sample"
-        android:visibility="invisible"
+    <VideoView
+        android:id="@+id/cctv_view2"
+        android:layout_width="400sp"
+        android:layout_height="300sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cctv_view"
-        app:layout_constraintTop_toBottomOf="@+id/cctv_view" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
