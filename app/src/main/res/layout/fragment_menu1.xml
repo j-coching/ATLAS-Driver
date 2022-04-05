@@ -36,7 +36,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.25"
+        android:layout_weight="1.23"
         android:orientation="horizontal">
 
         <Space
@@ -146,7 +146,7 @@
                     android:layout_height="30sp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/unselected_miles"
+                    android:background="@drawable/mi_button"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                 <Space
@@ -161,7 +161,7 @@
                     android:layout_height="30sp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-                    android:background="@drawable/selected_km"
+                    android:background="@drawable/km_button"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
             </LinearLayout>
@@ -268,7 +268,7 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off"
+                        android:background="@drawable/amenity_button_1"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -277,7 +277,7 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off"
+                        android:background="@drawable/amenity_button_2"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -286,7 +286,7 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off"
+                        android:background="@drawable/amenity_button_3"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -295,7 +295,7 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off"
+                        android:background="@drawable/amenity_button_4"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -304,7 +304,7 @@
                         android:layout_height="30sp"
                         android:layout_gravity="center|right"
                         android:layout_weight="1"
-                        android:background="@drawable/amenity_switch_off"
+                        android:background="@drawable/amenity_button_5"
                         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 </LinearLayout>
